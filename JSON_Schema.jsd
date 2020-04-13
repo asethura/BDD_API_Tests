@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Web_Crawler_JSON_Response",
+    "description": "Web Crawler JSON Response",
+    "type": "object",
+    "properties": {
+        "external_links": {
+            "description": "External Links",
+            "type": "object",
+            "properties": {
+                "urls": {
+                    "description": "Urls",
+                    "type": "array",
+                    "properties": {
+                        "url": {
+                            "description": "url",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "external_images": {
+            "description": "External Images",
+            "type": "object",
+            "properties": {
+                "urls": {
+                    "description": "Urls",
+                    "type": "array",
+                    "properties": {
+                        "url": {
+                            "description": "url",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "internal_links": {
+            "description": "Internal Links",
+            "type": "object",
+            "properties": {
+                "urls": {
+                    "description": "Urls",
+                    "type": "array",
+                    "properties": {
+                        "url": {
+                            "description": "url",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "internal_images": {
+            "description": "Internal Images",
+            "type": "object",
+            "properties": {
+                "urls": {
+                    "description": "Urls",
+                    "type": "array",
+                    "properties": {
+                        "url": {
+                            "description": "url",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "required": [
+        "external_links",
+        "external_images",
+        "internal_links",
+        "internal_images"
+    ]
+}
